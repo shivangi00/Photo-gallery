@@ -1,3 +1,4 @@
+Link - https://shivangi00.github.io/Photo-gallery/
 This project showcases a landing page followed by a photo gallery made using HTML and CSS. It is Mobile responsive as well.
 The template can be used to display photography portfolios.
 
