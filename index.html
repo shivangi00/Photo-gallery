@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <p><a href="home.html"> Shivangi's Portfolio </a></p>
+        <hr>
+    </div>
+    <section class="container">
+        <div class="bg"></div>
+        <div class="slide-wrapper">
+            <div class="slider">
+                <img src="media/IMG_0106.HEIC" alt="" id="slide-1">
+                <img src="media/DSC04978.JPG" alt="" id="slide-2">
+                <img src="media/DSC05006.JPG" alt="" id="slide-3">
+                <img src="media/DSC05132.JPG" alt="" id="slide-4">
+                <img src="media/DSC05164.JPG" alt="" id="slide-5">
+                <img src="media/DSC05516.JPG" alt="" id="slide-6">
+                <img src="media/DSC05581.JPG" alt="" id="slide-7">
+                <img src="media/DSC05781.JPG" alt="" id="slide-8">
+                <img src="media/IMG_0094.HEIC" alt="" id="slide-9">
+                <img src="media/DSC04742.JPG" alt="" id="slide-10">
+                <img src="media/IMG_0262.HEIC" alt="" id="slide-11">
+                <img src="media/IMG_0326.HEIC" alt="" id="slide-12">
+                <img src="media/IMG_0345 2.HEIC" alt="" id="slide-13">
+                <img src="media/IMG_0401.HEIC" alt="" id="slide-14">
+                <img src="media/IMG_1107.HEIC" alt="" id="slide-15">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+                <a href="#slide-6"></a>
+                <a href="#slide-7"></a>
+                <a href="#slide-8"></a>
+                <a href="#slide-9"></a>
+                <a href="#slide-10"></a>
+                <a href="#slide-11"></a>
+                <a href="#slide-12"></a>
+                <a href="#slide-13"></a>
+                <a href="#slide-14"></a>
+                <a href="#slide-15"></a>
+            </div>
+        </div>
+    </section>
+    <p class="footer">
+        <a href="https://www.instagram.com/quackquackbath/"><i><img src="media/instagram.png"></img></i>&nbsp;quackquackbath</a>&nbsp;|&nbsp;<a href="https://github.com/shivangi00"><i><img src="media/github-2.png"></img></i>&nbsp;shivangi00</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/shivangimalik/"><i><img src="media/linkedin.png"></img></i>&nbsp;shivangimalik</a>
+        <br><br>
+        &copy; 2025 Shivangi Malik
+    </p>
+    <script>
+        const slider = document.querySelector('.slider');
+        const bg = document.querySelector('.bg');
+        const images = document.querySelectorAll('.slider img');
+
+        /* initial background */
+        bg.style.backgroundImage = `url(${images[0].src})`;
+
+        slider.addEventListener('scroll', () => {
+            const index = Math.round(
+                slider.scrollLeft / slider.clientWidth
+            );
+            bg.style.backgroundImage = `url(${images[index].src})`;
+        });
+
+    </script>
+</body>
+</html>
